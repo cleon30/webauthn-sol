@@ -37,7 +37,7 @@ def _build_chrome_webdriver():
     options.add_argument("--v=1")
     options.set_capability("goog:loggingPrefs", {'browser': 'ALL'})
 
-    service = ChromeService(executable_path="/usr/bin/chromedriver")
+    service = ChromeService(executable_path="/usr/local/bin/chromedriver")
 
     return webdriver.Chrome(
         options=options, service=service)
